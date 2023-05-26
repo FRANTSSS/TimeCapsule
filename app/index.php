@@ -74,9 +74,6 @@
                         <div class="cal__day_one__for_text">
                             <div class="cal__day_one___text"></div>
                             <ul class="cal_day_one__list_events">
-                                <li>День Защитника Отечества</li>
-                                <li>ыфкпыпк</li>
-                                <li>иккеи</li>
                             </ul>
                         </div>
                     </td>
@@ -128,9 +125,6 @@
                         <div class="cal__day_one__for_text">
                             <div class="cal__day_one___text"></div>
                             <ul class="cal_day_one__list_events">
-                                <li>День Защитника Отечества</li>
-                                <li>ыфкпыпк</li>
-                                <li>иккеи</li>
                             </ul>
                         </div>
                     </td>
@@ -182,9 +176,6 @@
                         <div class="cal__day_one__for_text">
                             <div class="cal__day_one___text"></div>
                             <ul class="cal_day_one__list_events">
-                                <li>День Защитника Отечества</li>
-                                <li>ыфкпыпк</li>
-                                <li>иккеи</li>
                             </ul>
                         </div>
                     </td>
@@ -236,9 +227,6 @@
                         <div class="cal__day_one__for_text">
                             <div class="cal__day_one___text"></div>
                             <ul class="cal_day_one__list_events">
-                                <li>День Защитника Отечества</li>
-                                <li>ыфкпыпк</li>
-                                <li>иккеи</li>
                             </ul>
                         </div>
                     </td>
@@ -363,7 +351,6 @@
                 </div>
 
                 <button id="button__apply"> APPLY </button>
-                <script src="public/script/ApplyHandler.js"></script>
 <!--            </form>-->
         </div>
 

@@ -315,6 +315,10 @@ body {
     height: 205px;
     border-bottom: 1px solid #E6E6E6;
     border-right: 1px solid #E6E6E6;
+
+}
+.cal__day__one:hover{
+    background: #F3F2F2;
 }
 
 .cal_day_one_extreme {
@@ -325,6 +329,10 @@ body {
     border-bottom: 1px solid #E6E6E6;
 }
 
+.cal_day_one_extreme:hover{
+    background: #F3F2F2;
+}
+
 .cal__day__one_last {
     position: relative;
     background: #FAFAFA;
@@ -333,6 +341,10 @@ body {
     border-right: 1px solid #E6E6E6;
     border-bottom-left-radius: 8px;
 }
+.cal__day__one_last:hover{
+    /*border-left: 1px solid #E6E6E6;*/
+    background: #F3F2F2;
+}
 
 .cal__day__one_last_extreme {
     position: relative;
@@ -340,6 +352,10 @@ body {
     width: 154px;
     height: 205px;
     border-bottom-right-radius: 8px;
+}
+
+.cal__day__one_last_extreme:hover{
+    background: #F3F2F2;
 }
 
 .cal__day_one__for_text {
@@ -394,7 +410,7 @@ li {
     /*font-size: 12px;*/
     line-height: 15px;
 
-    border: 3px solid #0A59A6;
+    border: 1px solid #FF9C0C;
     border-radius: 9px;
 }
 

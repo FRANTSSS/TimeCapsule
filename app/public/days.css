@@ -1,0 +1,150 @@
+. {
+    width: 1910px;
+    height: 1600px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    background: #F3F2F2;
+}
+
+.page__months_years__main {
+    position: relative;
+    width: 1170px;
+    height: 70px;
+    display: flex;
+    left: -10px;
+    text-align: center;
+    margin: auto;
+}
+
+.button_month_year_text {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+    margin-block: auto;
+    color: #5E5E5E;
+    padding-top: 15px;
+}
+
+.year__comp__arrows {
+    height: 70px;
+    display: flex;
+    position: relative;
+    right: -900px;
+}
+
+.page__main_text_almanac_events__ {
+    position: fixed;
+    display: flex;
+    width: 285px;
+    height: 842px;
+    top: 100px;
+}
+
+.page__text_almanac {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-shadow: #1E90FF 1px 1px 0,
+    #1E90FF -1px -1px 0,
+    #1E90FF -1px 1px 0,
+    #1E90FF 1px -1px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -25px;
+    left: 30px;
+    top: -80px;
+    text-align: center;
+    width: 108px;
+    height: 842px;
+
+    color: #F3F3F3;
+
+}
+
+.page__text_events {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-shadow: #1E90FF 1px 1px 0,
+    #1E90FF -1px -1px 0,
+    #1E90FF -1px 1px 0,
+    #1E90FF 1px -1px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -25px;
+    left: 50px;
+    top: -70px;
+    text-align: center;
+    width: 108px;
+    height: 842px;
+
+    color: #F3F3F3;
+}
+
+.page_text_event__main{
+    background: #F3F3F3;
+    position: relative;
+    width: 1060px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    left: 409px;
+    top: 70px;
+    border: 1px solid #FF9C0C;
+    border-radius: 8px;
+
+}
+
+.page_text__header {
+    position: relative;
+    /*width: 390px;*/
+    /*height: 120px;*/
+    /*left: 408px;*/
+    /*top: 188px;*/
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    /*font-weight: 400;*/
+    left: 25px;
+    font-size: 40px;
+    /*line-height: 120px;*/
+    /* identical to box height, or 250% */
+
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+
+
+    color: #000000;
+}
+
+.page_text__description{
+    position: relative;
+    padding-top: 20px;
+    /*width: 974px;*/
+    /*height: 251px;*/
+    /*left: 0px;*/
+    /*top: 0px;*/
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+
+    color: #000000;
+}

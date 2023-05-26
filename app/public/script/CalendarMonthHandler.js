@@ -7,7 +7,16 @@ btn__search_month_down.addEventListener("click", cal_moth_handler);
 btn__search_month_up.addEventListener("click", cal_moth_handler);
 btn__search_year_down.addEventListener("click", cal_year_handler);
 btn__search_year_up.addEventListener("click", cal_year_handler);
-button__apply.addEventListener("click", get_events_month);
+button__apply.addEventListener("click", cal_apply_handler);
+
+function cal_apply_handler(event){
+    get_events_month();
+    replace_day_text();
+    //clear_settings();
+    clear_events();
+
+    //get_group_tag_theme();
+}
 
 
 function cal_moth_handler(event){
@@ -25,6 +34,10 @@ function cal_moth_handler(event){
 
     //let days = calendar_generate_days()
     replace_day_text();
+    //clear_settings();
+    clear_events();
+
+    //get_group_tag_theme();
     get_events_month();
 }
 
@@ -40,6 +53,11 @@ function cal_year_handler(event){
     let days = calendar_generate_days()
 
     replace_day_text();
+   // clear_settings();
+    clear_events();
+
+    //get_group_tag_theme();
+    get_events_month();
 }
 
 replace_day_text();
@@ -47,4 +65,4 @@ clear_settings();
 clear_events();
 
 get_group_tag_theme();
-// get_events_month();
+get_events_month();
