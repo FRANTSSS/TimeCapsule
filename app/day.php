@@ -1,3 +1,15 @@
+<?php session_start();
+if($_SESSION["user"] === null){
+    $_SESSION["user"] = "user";
+}
+
+if($_SESSION["user"] === "admin"){
+    $admin_panel = include "panel.php";
+}
+else{
+    $admin_panel = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +21,7 @@
 </head>
 <body>
 <div id="app" class="main">
+    <div class="page__panel"><?php echo $admin_panel?></div>
     <div class="page__months_years__main">
         <!--                <form name="search__by_month_year" method="GET" action="index.php">-->
         <div class="moth__comp__arrows">
@@ -25,11 +38,12 @@
         <div class="page__text_almanac"> ALMANAC </div>
         <div class="page__text_events"> EVENTS </div>
     </div>
+
     <div class="page_text_events__list">
 
     </div>
     <script src="public/script/DayMonthHandler.js" type="module"></script>
+
 </div>
 </body>
 </html>
-<?php

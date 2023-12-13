@@ -86,7 +86,7 @@ function get_params_events(){
 export function get_group_tag_theme(){
     let httpRequest = create_request();
     httpRequest.onreadystatechange = function() { view_get_tag_theme(httpRequest); };
-    httpRequest.open("GET", "http://localhost:8040/app/settings.php", true);
+    httpRequest.open("GET", "/app/settings.php", true);
     httpRequest.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     httpRequest.send();
 }
@@ -96,7 +96,7 @@ export function get_events_month(){
 
     let params = get_params_events();
     httpRequest.onreadystatechange = function() { view_events_month(httpRequest); };
-    httpRequest.open("POST", "http://localhost:8040/app/calendar.php", true);
+    httpRequest.open("POST", "/app/calendar.php", true);
     httpRequest.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     httpRequest.send(JSON.stringify(params));
 }
@@ -120,7 +120,7 @@ export function get_events_day(date_list){
     console.log(date_list);
     let params = {"tag": [], "theme": [], group: [], "year": Number(date_list[2]), "month": Number(date_list[3])};
     httpRequest.onreadystatechange = function() { view_events_day(httpRequest, Number(date_list[0])); };
-    httpRequest.open("POST", "http://localhost:8040/app/calendar.php", true);
+    httpRequest.open("POST", "/app/calendar.php", true);
     httpRequest.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     httpRequest.send(JSON.stringify(params));
 }

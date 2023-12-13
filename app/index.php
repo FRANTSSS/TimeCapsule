@@ -1,3 +1,15 @@
+<?php session_start();
+if($_SESSION["user"] === null){
+    $_SESSION["user"] = "user";
+}
+
+if($_SESSION["user"] === "admin"){
+    $admin_panel = include "panel.php";
+}
+else{
+    $admin_panel = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +30,7 @@
                 </div>
             </form>
         </div>
+        <div class="page__panel"><?php echo $admin_panel?></div>
 <!--        <form name="search__by_month_year">-->
             <div class="page__months_years__main">
 <!--                <form name="search__by_month_year" method="GET" action="index.php">-->

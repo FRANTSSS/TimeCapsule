@@ -1,4 +1,8 @@
-<?php
+<?php session_start();
+if($_SESSION["user"] === null){
+    $_SESSION["user"] = "user";
+}
+
 include("config.php");
 
 function main()

@@ -1,4 +1,7 @@
-<?php
+<?php session_start();
+if($_SESSION["user"] === null){
+    $_SESSION["user"] = "user";
+}
 
 $DB_HOST = "localhost";
 $DB_PORT = "5432";

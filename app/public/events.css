@@ -1,0 +1,124 @@
+
+body {
+    background: #F3F2F2;
+}
+
+.page__main_text_almanac_events__ {
+    position: fixed;
+    display: flex;
+    width: 140px;
+    height: 842px;
+    top: 100px;
+}
+
+.page__text_almanac {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-shadow: #1E90FF 1px 1px 0,
+    #1E90FF -1px -1px 0,
+    #1E90FF -1px 1px 0,
+    #1E90FF 1px -1px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -25px;
+    left: -10px;
+    top: -80px;
+    text-align: center;
+    width: 108px;
+    height: 842px;
+
+    color: #F3F3F3;
+
+}
+
+
+#tittle_groups_page {
+    position: relative;
+    color: #5E5E5E;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 8%;
+    margin-top: 2%
+}
+
+table, th, td, tr {
+    position: relative;
+    border: 1px solid;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+table {
+    margin-left: 6%;
+    margin-top: 2%;
+}
+th, td, tr {
+    padding: 3px 10px 3px 10px;
+}
+
+tr{
+    background: #FAFAFA;
+}
+
+tr:hover{
+    background: #e5e5e5;
+}
+
+.delete_button {
+    width: 21px;
+    height: 24px;
+    border: none;
+    background-image: url('./trash.png');
+    background-size: cover;
+}
+
+#add_group {
+    position: absolute;
+    color: #5E5E5E;
+    background: #F3F2F2;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    margin-left: 35.7%;
+}
+
+#change__event {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 46%;
+    border: 1px solid;
+    border-radius: 3px;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#create_event {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 11.5%;
+    border: 1px solid;
+    border-radius: 3px;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
