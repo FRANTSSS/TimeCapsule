@@ -68,7 +68,7 @@ function load_events(requests){
 function get_all_events(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_events(requests); };
-    requests.open("GET", "/date.php/get_all_events", true);
+    requests.open("GET", "/get_all_events.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }

@@ -60,7 +60,7 @@ function get_current_theme_id(){
 function get_all_themes(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_themes(requests); };
-    requests.open("GET", "/event.php/get_all_themes", true);
+    requests.open("GET", "/get_all_themes.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -101,7 +101,7 @@ function get_current_group_id(){
 function get_all_groups(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_groups(requests); };
-    requests.open("GET", "/event.php/get_all_groups", true);
+    requests.open("GET", "/get_all_groups.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -165,7 +165,7 @@ function load_tags(requests){
 function get_all_tags(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_tags(requests); };
-    requests.open("GET", "/event.php/get_all_tags", true);
+    requests.open("GET", "/get_all_tags.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }

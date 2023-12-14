@@ -4,8 +4,8 @@ if(!array_key_exists("user", $_SESSION)){
     $_SESSION["user"] = "user";
 }
 
-
-$DB_HOST = "localhost";
+//localhost
+$DB_HOST = "postgres_almanac";
 $DB_PORT = "5432";
 $DB_USER = "postgres";
 $DB_PASSWD = "0000";
