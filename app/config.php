@@ -6,7 +6,7 @@ if($_SESSION["user"] === null){
 $DB_HOST = "localhost";
 $DB_PORT = "5432";
 $DB_USER = "postgres";
-$DB_PASSWD = "1805";
+$DB_PASSWD = "0000";
 $DB_NAME = "almanac_events";
 
 $CONNECTION = pg_connect(
