@@ -1,0 +1,88 @@
+
+. {
+    width: 1910px;
+    height: 1600px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    background: #F3F2F2;
+}
+
+.page_not_found {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 39px;
+    top: 100px;
+    left: 30%;
+    color: #383838;
+}
+
+.page__main_text_almanac_events__ {
+    position: fixed;
+    display: flex;
+    width: 285px;
+    height: 842px;
+    top: 100px;
+}
+
+.page__text_almanac {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-shadow: #1E90FF 1px 1px 0,
+                 #1E90FF -1px -1px 0,
+                 #1E90FF -1px 1px 0,
+                 #1E90FF 1px -1px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -25px;
+    left: 30px;
+    top: -80px;
+    text-align: center;
+    width: 108px;
+    height: 842px;
+
+    color: #F3F3F3;
+
+}
+
+.page__text_events {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-shadow: #1E90FF 1px 1px 0,
+    #1E90FF -1px -1px 0,
+    #1E90FF -1px 1px 0,
+    #1E90FF 1px -1px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -25px;
+    left: 50px;
+    top: -70px;
+    text-align: center;
+    width: 108px;
+    height: 842px;
+
+    color: #F3F3F3;
+}
+
+
+@media screen and (max-width:1720px) {
+    #app{
+        position: relative;
+    }
+    .page__main_text_almanac_events__{
+        display: none;
+    }
+}
