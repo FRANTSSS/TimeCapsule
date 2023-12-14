@@ -68,7 +68,7 @@ function load_events(requests){
 function get_all_events(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_events(requests); };
-    requests.open("GET", "/app/date.php/get_all_events", true);
+    requests.open("GET", "/date.php/get_all_events", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -85,7 +85,7 @@ function get_body(){
 function change_date(){
     let params = get_body();
     let requests = create_request();
-    requests.open("PUT", "/app/date.php?id=" + params["date"], true);
+    requests.open("PUT", "/date.php?id=" + params["date"], true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }
@@ -103,7 +103,7 @@ if(document.getElementById("change__date") !== null) {
 function create_date(){
     let params = get_body();
     let requests = create_request();
-    requests.open("POST", "/app/date.php?id=" + params["date"], true);
+    requests.open("POST", "/date.php?id=" + params["date"], true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }

@@ -1,4 +1,7 @@
 <?php session_start();
+if(array_key_exists("user", $_SESSION)){
+    $_SESSION["user"] = "user";
+}
 if($_SESSION["user"] !== "admin"){
     var_dump(http_response_code(403));
 }

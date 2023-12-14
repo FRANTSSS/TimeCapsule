@@ -60,7 +60,7 @@ function get_current_theme_id(){
 function get_all_themes(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_themes(requests); };
-    requests.open("GET", "/app/event.php/get_all_themes", true);
+    requests.open("GET", "/event.php/get_all_themes", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -101,7 +101,7 @@ function get_current_group_id(){
 function get_all_groups(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_groups(requests); };
-    requests.open("GET", "/app/event.php/get_all_groups", true);
+    requests.open("GET", "/event.php/get_all_groups", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -165,7 +165,7 @@ function load_tags(requests){
 function get_all_tags(){
     let requests = create_request();
     requests.onreadystatechange = function() { load_tags(requests); };
-    requests.open("GET", "/app/event.php/get_all_tags", true);
+    requests.open("GET", "/event.php/get_all_tags", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }
@@ -206,7 +206,7 @@ function get_body_create(){
 function change_event(){
     let params = get_body();
     let requests = create_request();
-    requests.open("PUT", "/app/event.php?id=" + params["id"], true);
+    requests.open("PUT", "/event.php?id=" + params["id"], true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }
@@ -214,7 +214,7 @@ function change_event(){
 function add_event(){
     let params = get_body_create();
     let requests = create_request();
-    requests.open("POST", "/app/event_add.php", true);
+    requests.open("POST", "/event_add.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }

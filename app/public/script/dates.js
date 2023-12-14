@@ -12,7 +12,7 @@ function create_request(){
 
 function delete_date(id){
     let requests = create_request();
-    requests.open("DELETE", "/app/date.php?id=" + id, true);
+    requests.open("DELETE", "/date.php?id=" + id, true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send();
 }

@@ -39,7 +39,7 @@ function login_handler(){
     let params = get_params();
     if(params.login.length !== 0 && params.password.length !== 0) {
         httpRequest.onreadystatechange = function() { view_result_auth(httpRequest); };
-        httpRequest.open("POST", "/app/auth.php", true);
+        httpRequest.open("POST", "/auth.php", true);
         httpRequest.setRequestHeader("Content-Type", "application/json;charset=utf-8");
         httpRequest.send(JSON.stringify(params));
     }

@@ -18,7 +18,7 @@ export function add_handlers_buttons(){
         button_list[i].addEventListener("click", function() {
             if(confirm("Подтвердите удаление")){
                 let requests = create_request();
-                requests.open("DELETE", "/app/theme.php?id=" + button_list[i].id, true);
+                requests.open("DELETE", "/theme.php?id=" + button_list[i].id, true);
                 requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
                 requests.send();
             }
@@ -38,7 +38,7 @@ function get_body_groups(){
 function change_groups(){
     let params = get_body_groups();
     let requests = create_request();
-    requests.open("PUT", "/app/theme.php?id=" + params["id"], true);
+    requests.open("PUT", "/theme.php?id=" + params["id"], true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }
@@ -61,7 +61,7 @@ function get_params_create_group(){
 function create_groups(){
     let params = get_params_create_group();
     let requests = create_request();
-    requests.open("POST", "/app/theme_add.php", true);
+    requests.open("POST", "/theme_add.php", true);
     requests.setRequestHeader("Content-Type", "application/json;charset=utf-8");
     requests.send(JSON.stringify(params));
 }

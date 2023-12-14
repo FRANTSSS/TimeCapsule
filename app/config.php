@@ -1,7 +1,9 @@
 <?php session_start();
-if($_SESSION["user"] === null){
+
+if(array_key_exists("user", $_SESSION)){
     $_SESSION["user"] = "user";
 }
+
 
 $DB_HOST = "localhost";
 $DB_PORT = "5432";
