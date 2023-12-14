@@ -44,8 +44,8 @@ export function get_up_down_month(month_name){
 }
 
 export function calendar_generate_days(){
-    let year = document.getElementById("button_year_text").textContent.toString().trim();
-    let month = MONTHS.indexOf(document.getElementById("button_month_text").textContent.toString().trim());
+    let year = document.getElementById("button_year_text").name.toString().trim();
+    let month = MONTHS.indexOf(document.getElementById("button_month_text").name.toString().trim());
 
     const days = [];
     const d = new Date(`${year}-${month}-1`);

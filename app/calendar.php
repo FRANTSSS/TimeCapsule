@@ -67,7 +67,12 @@ function main(){
 
 
     $start_m = get_month_q($result["year"], $result["month"]);
-    $end_m = get_month_q($result["year"], $result["month"] + 1);
+    if($result["month"] === 12){
+        $end_m = get_month_q($result["year"] + 1, 1);
+    }
+    else{
+        $end_m = get_month_q($result["year"], $result["month"] + 1);
+    }
     $events_id_str = get_str_list_events_id($resultArray);
 
     $query1 = "SELECT * FROM \"dates_events\" WHERE (\"dates_events\".\"date\"
@@ -75,7 +80,7 @@ function main(){
                $events_id_str;";
 
 
-//    echo $query1;
+//   echo $query1;
     $response1 = pg_query($query1) or die('Query failed: ' . pg_last_error());
     $resultArray1 = array();
 

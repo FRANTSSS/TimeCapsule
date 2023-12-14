@@ -22,13 +22,13 @@ else{
 <body>
     <div id="app" class="main">
         <div class="page__header">
-            <form name="search__by_search_form" method="GET" action="index.php">
-                <div class="rectangle_search__main">
-                    <img class="free-icon-magnifier" src="public/search-glass.png" alt="search">
-                    <input type="text" class="search__input">
-                    <button class="button__search" id="btn_search__1">SEARCH</button>
-                </div>
-            </form>
+<!--            <form name="search__by_search_form" method="GET" action="index.php">-->
+<!--                <div class="rectangle_search__main">-->
+<!--                    <img class="free-icon-magnifier" src="public/search-glass.png" alt="search">-->
+<!--                    <input type="text" class="search__input">-->
+<!--                    <button class="button__search" id="btn_search__1">SEARCH</button>-->
+<!--                </div>-->
+<!--            </form>-->
         </div>
         <div class="page__panel"><?php echo $admin_panel?></div>
 <!--        <form name="search__by_month_year">-->
@@ -36,7 +36,7 @@ else{
 <!--                <form name="search__by_month_year" method="GET" action="index.php">-->
                     <div class="moth__comp__arrows">
                         <button class="button__search_moth" id="btn__search_month_down"> < </button>
-                        <p class="button_month_year_text" id="button_month_text"> MAY </p>
+                        <p class="button_month_year_text" id="button_month_text"> DEC </p>
                         <button type="button" class="button__search_moth" id="btn__search_month_up"> > </button>
                     </div>
 <!--                </form>-->
@@ -343,27 +343,27 @@ else{
         <div class="page__settings__main">
 <!--            <form name="search__by_settings">-->
                 <div class="page__settings_group__main">
-                    <div class="page__group_theme_tag__text"> GROUP </div>
+                    <div class="page__group_theme_tag__text"> Группа </div>
                     <div class="page__group_theme_tag__rectangle" id="page__group_">
 
                     </div>
                 </div>
 
                 <div class="page__settings_theme__main">
-                    <div class="page__group_theme_tag__text"> THEME </div>
+                    <div class="page__group_theme_tag__text"> Тема </div>
                     <div class="page__group_theme_tag__rectangle" id="page__theme_">
 
                     </div>
                 </div>
 
                 <div class="page__settings_tag__main">
-                    <div class="page__group_theme_tag__text"> TAG </div>
+                    <div class="page__group_theme_tag__text"> Тег </div>
                     <div class="page__group_theme_tag__rectangle" id="page__tag_">
 
                     </div>
                 </div>
 
-                <button id="button__apply"> APPLY </button>
+                <button id="button__apply"> Применить </button>
 <!--            </form>-->
         </div>
 

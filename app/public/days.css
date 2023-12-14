@@ -148,3 +148,82 @@ body {
 
     color: #000000;
 }
+
+
+@media screen and (max-width:1720px) {
+    #app {
+        position: relative;
+    }
+
+    .page__main_text_almanac_events__ {
+        display: none;
+    }
+
+    .page__months_years__main {
+        position: relative;
+        width: auto;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+
+    .moth__comp__arrows {
+        height: 70px;
+        display: flex;
+        position: relative;
+        margin-left: 200px;
+    }
+
+    .year__comp__arrows {
+        height: 70px;
+        display: flex;
+        position: relative;
+        left: 10px;
+        right: 10px;
+    }
+
+    .page_text_events__list {
+        position: relative;
+        width: 100%;
+        /*text-align: center;*/
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .page_text_event__main{
+        background: #F3F3F3;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        left: 10px;
+        right: 10px;
+        margin-bottom: 40px;
+        top: 70px;
+        border: 1px solid #FF9C0C;
+        border-radius: 8px;
+
+    }
+
+    .page_text__header {
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        left: 25px;
+        font-size: 45px;
+        color: #000000;
+    }
+
+    .page_text__description{
+        position: relative;
+        padding-top: 20px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+}

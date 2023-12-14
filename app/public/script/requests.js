@@ -63,8 +63,11 @@ function view_events_month(httpRequest){
                     doc[i].setAttribute("onclick", `document.location=${str_href}`);
                     console.log(doc[i].children[0]);
                     for(let k = 0; k < events_days[j].length; k++){
-                        let htm = get_html_event(result[events_days[j]][k]["name"]);
-                        doc[i].children[1].innerHTML += htm;
+                        try {
+                            let htm = get_html_event(result[events_days[j]][k]["name"]);
+                            doc[i].children[1].innerHTML += htm;
+                        }
+                        catch (e){}
                     }
 
                 }

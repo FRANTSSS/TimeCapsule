@@ -305,7 +305,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    /*line-height: 19px;*/
 }
 
 .cal__day__one {
@@ -430,4 +430,224 @@ li {
 
 .cal_day_one__list_events::-webkit-scrollbar-track {
     border-radius: 9px;
+}
+
+@media screen and (max-width:1720px) {
+    #app{
+        position: relative;
+    }
+    .page__main_text_almanac_events__{
+        display: none;
+    }
+
+    .page__calendar__main {
+        position: relative;
+        width: 1060px;
+        height: 1098px;
+        left: 35px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto auto 50px;
+        background: #FAFAFA;
+        box-sizing: border-box;
+        border: 2px solid rgba(30, 144, 255, 0.5);
+        border-radius: 8px;
+        top: 15px;
+    }
+
+    .table__calendar {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+
+    .cal__days_week {
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .cal__day_wk {
+        position: relative;
+        width: 14%;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        border-bottom: 0px;
+        border-right: 0px;;
+        height: 51px;
+        display: flex;
+    }
+
+    .cal__day_wk_extreme {
+        position: relative;
+        width: 16%;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        border-bottom: 0px;
+        height: 51px;
+        display: flex;
+    }
+
+    .cal__day_week__text {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 108px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        /*line-height: 19px;*/
+    }
+
+    .cal__day__one {
+        position: relative;
+        background: #FAFAFA;
+        width: 14%;
+        height: 205px;
+        border-bottom: 1px solid #E6E6E6;
+        border-right: 1px solid #E6E6E6;
+
+    }
+    .cal__day__one:hover{
+        background: #F3F2F2;
+    }
+
+    .cal_day_one_extreme {
+        position: relative;
+        background: #FAFAFA;
+        width: 16%;
+        height: 205px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+
+    .cal_day_one_extreme:hover{
+        background: #F3F2F2;
+    }
+
+    .cal__day__one_last {
+        position: relative;
+        background: #FAFAFA;
+        width: 14%;
+        height: 205px;
+        border-right: 1px solid #E6E6E6;
+        border-bottom-left-radius: 8px;
+    }
+    .cal__day__one_last:hover{
+        /*border-left: 1px solid #E6E6E6;*/
+        background: #F3F2F2;
+    }
+
+    .cal__day__one_last_extreme {
+        position: relative;
+        background: #FAFAFA;
+        width: 16%;
+        height: 205px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .cal__day__one_last_extreme:hover{
+        background: #F3F2F2;
+    }
+
+    .cal__day_one__for_text {
+        position: relative;
+        width: 13%;
+        height: 39px;
+        top: 15px;
+    }
+
+    .cal__day_one___text {
+        position: relative;
+        display: flex;
+        left: 24px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 39px;
+
+        color: #383838;
+    }
+
+    .cal_day_one__list_events {
+        position: relative;
+        overflow-y: auto;
+        overflow-x: auto;
+        margin: 15px auto 15px;
+        /*list-style-type: none;*/
+        /*overflow-y: scroll;*/
+        /*width: 135px;*/
+        height: 122px;
+        width: 108px;
+    }
+
+
+    li {
+        font-size: 19px;
+    }
+
+
+    .page__settings__main {
+        /*display: none;*/
+        position: relative;
+        right: auto;
+        width: 1060px;
+        height: 1098px;
+        justify-content: space-around;
+        top: 15px;
+
+        left: 35px;
+        margin: auto auto 50px;
+        box-sizing: border-box;
+    }
+
+    .form-check {
+        position: relative;
+        margin: 20px 20px 20px;
+    }
+    .form-check-label {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        color: #383838;
+        line-height: 43px;
+        text-align: center;
+        margin-left: 15px;
+    }
+    .page__group_theme_tag__rectangle {
+        position: relative;
+        /*display: flex;*/
+        width: 1060px;
+        height: 276px;
+        background: #F3F2F2;
+        border: 3px solid rgba(30, 144, 255, 0.5);
+        border-radius: 9px;
+        margin: 0 0 47px;
+        overflow:auto;
+    }
+
+    #button__apply {
+        position: relative;
+        /*box-sizing: border-box;*/
+        /*margin: 0 0 47px;*/
+        overflow: auto;
+        background: #1e90ff;
+        border-radius: 9px;
+        width: 150px;
+        height: 45px;
+        left: 0px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        font: 400 25px 'Inter', sans-serif;
+        border: 0;
+        cursor: pointer;
+    }
 }
