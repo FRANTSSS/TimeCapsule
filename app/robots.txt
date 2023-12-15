@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: *.css
+Disallow: *.js
+Disallow: *.png
+Host: 91.216.46.87
