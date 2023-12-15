@@ -4,6 +4,8 @@ if(!array_key_exists("user", $_SESSION)){
 }
 if($_SESSION["user"] !== "admin"){
     var_dump(http_response_code(403));
+    include("err403.html");
+    return;
 }
 
 else{
